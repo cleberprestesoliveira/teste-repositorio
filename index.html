@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Provas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="cabecalho.jpg" alt="" srcset="">
+  <div class="container">
+    <h1>Gerador de Prova</h1>
+
+    <div id="formulario">
+      <label>Enunciado:</label>
+      <input type="text" id="enunciado">
+
+      <label>Alternativa A:</label>
+      <input type="text" id="altA">
+      <label>Alternativa B:</label>
+      <input type="text" id="altB">
+      <label>Alternativa C:</label>
+      <input type="text" id="altC">
+      <label>Alternativa D:</label>
+      <input type="text" id="altD">
+      <label>Alternativa E:</label>
+      <input type="text" id="altE">
+
+      <button onclick="salvarQuestao()">Salvar Questão</button>
+    </div>
+
+    <h2>Questões Salvas</h2>
+    <ul id="listaQuestoes"></ul>
+
+    <button onclick="gerarVersoesPDF()">Gerar PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
